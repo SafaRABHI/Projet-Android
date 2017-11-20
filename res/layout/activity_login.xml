@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:background="@drawable/back2"
+    tools:context="com.example.packardbell.rechercheproduit.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/arrowback"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrowback3"
+                android:background="#EE82EE"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/imagee"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im1"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/textfieldeholder"
+            android:layout_width="fill_parent"
+            android:layout_height="117dp"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            >
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="UserName"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:textColor="@android:color/black"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkboxholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="Remember Me"
+                android:textColor="#EF9CB2" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/buttonholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btlogin"
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:background="#CE93D8"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn3" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/forgotpasswordholder"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:paddingTop="25dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Button
+
+                android:id="@+id/btSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign Up Now "
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:background="#CE93D8"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

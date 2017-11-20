@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RechercheProduit</string>
+    <string name="title_activity_rechercheproduit">rechercheproduit</string>
+    <string name="title_activity_sign_up">SignUp</string>
+</resources>

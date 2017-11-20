@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:background="@drawable/back2"
+    tools:context="com.example.packardbell.rechercheproduit.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/arrowback"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrowback3"
+                android:background="#EE82EE"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/imagee"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imins"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formulaire"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TFname"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="Name"
+                android:textColor="@android:color/black"
+                 />
+
+            <EditText
+                android:id="@+id/TFemail"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="Email"
+                android:textColor="@android:color/black"
+                android:inputType="textEmailAddress"
+                 />
+
+            <EditText
+                android:id="@+id/TFuname"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="Uname"
+                android:textColor="@android:color/black"
+                 />
+            <EditText
+                android:id="@+id/TFpass1"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:textColor="@android:color/black"
+                android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/TFpass2"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:hint="ConfirmPassword"
+                android:textColor="@android:color/black"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/buttonholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/Bsignupbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:background="#CE93D8"
+                android:scaleType="fitXY"
+                android:text="SignUp"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.42" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
